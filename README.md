@@ -6,7 +6,7 @@ A simple user management app using laravel and vue.
 - PHP >= 7.1.3
 
 ### Run Project locally
-- git clone 
+- git clone https://github.com/andreinicolo/user-management.git
 - cd to "project_directory"
 - Create .env and Copy .env.example
 - run "composer install"
