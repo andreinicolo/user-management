@@ -135,7 +135,13 @@
 	            items: this.users,
 	            item: {
 	            	first_name: '',
-        			last_name: ''
+        			last_name: '',
+                    email: '',
+                    password: '',
+                    address: '',
+                    post_code: '',
+                    contact_number: '',
+                    id: ''
 	            },
                 checkedUser: []
 	        };
@@ -159,7 +165,8 @@
 	                    	this.item.contact_number = '';
 	                    	this.item.username = '';
                             this.item.password = '';
-	                    	this.item.password_confirmation = '';
+                            this.item.password_confirmation = '';
+	                    	this.item.id = '';
 
                             Vue.$toast.open(response.data.message);
 	                    },
@@ -182,6 +189,7 @@
 	                    	this.item.username = '';
 	                    	this.item.password = '';
                             this.item.password_confirmation = '';
+                            this.item.id = '';
 
                             Vue.$toast.open(response.data.message);
 	                    },

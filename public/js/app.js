@@ -1868,7 +1868,13 @@ __webpack_require__.r(__webpack_exports__);
       items: this.users,
       item: {
         first_name: '',
-        last_name: ''
+        last_name: '',
+        email: '',
+        password: '',
+        address: '',
+        post_code: '',
+        contact_number: '',
+        id: ''
       },
       checkedUser: []
     };
@@ -1892,6 +1898,7 @@ __webpack_require__.r(__webpack_exports__);
           _this2.item.username = '';
           _this2.item.password = '';
           _this2.item.password_confirmation = '';
+          _this2.item.id = '';
           Vue.$toast.open(response.data.message);
         }, function (error) {
           Vue.$toast.open(error.message);
@@ -1909,6 +1916,7 @@ __webpack_require__.r(__webpack_exports__);
           _this2.item.username = '';
           _this2.item.password = '';
           _this2.item.password_confirmation = '';
+          _this2.item.id = '';
           Vue.$toast.open(response.data.message);
         }, function (error) {
           Vue.$toast.open(error.message);
